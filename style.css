@@ -32,11 +32,14 @@ body {
 }
 
 header {
+  position: relative;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #444;
+  z-index: 99;
+  /* background-color: #444; */
 }
 
 .logo img {
@@ -114,18 +117,22 @@ html {
 /* HEADER FACE /////// */
 
 .fsection {
+  position: absolute;
+  /* height: 100vh; */
+  height: auto;
+  width: 100%;
+  inset: 0;
   background-image: url("./IMG/160726150143-us-beautiful-hotels-17-bellagio-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   border-bottom: 30px solid goldenrod;
-  height: 650px;
   /* margin-bottom: 30px ; */
-  background-color: goldenrod;
+  /* background-color: goldenrod; */
 }
 
 /* casorell styling  SECTION*/
-
+/* 
 .scrolling-section {
   width: 100%;
   height: 100%;
@@ -136,7 +143,7 @@ html {
   position: relative;
   white-space: nowrap;
   border-bottom: solid 30px goldenrod;
-}
+} */
 
 .scrolling-images {
   display: flex;
@@ -231,12 +238,16 @@ footer {
 /* OURSERVIVE SECTION//// PAGE////////////////// */
 
 .ourservice {
-  background-image: url("./IMG/WhatsApp\ Image\ 2024-07-13\ at\ 19.52.49_157e5278.jpg");
+  z-index: 1;
+  background-image: url(./IMG/160726150143-us-beautiful-hotels-17-bellagio-2.jpg );
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  height: 950px;
-  position: relative;
+  position:absolute;
+  height: 100vh;
+  border-bottom: 10px solid goldenrod;
+  width: 100%;
+  inset: 0;
 }
 
 .rems h1 {
@@ -252,8 +263,11 @@ footer {
 }
 
 .ourservice1 {
-  display: flex;
-  gap: 5px;
+  margin-top: 475px;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  /* grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr; */
+  /* gap: 5px; */
   background-color: #333;
 }
 
@@ -379,9 +393,86 @@ footer {
 }
 
 .services{
-    border: 7px solid gold;
+    border: 2px solid gold;
     background-color: black;
     box-sizing: 7px;
-    padding: 16px;
+    padding: 10px;
+    border-radius: 5px;
     text-align: center;
+}
+
+/* SIGN UP/ LOGIN PAGE 😁😁😁😁 */
+
+
+.book{
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  inset: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./IMG/160726150143-us-beautiful-hotels-17-bellagio-2.jpg );
+}
+
+.bookingformcontainer{
+  border: 5px solid gold;
+  max-width: 300px;
+  background-color: #333;
+
+}
+
+.bookingform{
+  padding: 36px;
+  /* z-index: 99; */
+}
+
+form{
+  position: relative;
+  display: block;
+  color:gold;
+}
+
+input{
+  background:gold;
+  padding: 3px;
+  border: 2px solid black;
+  color: black;
+}
+
+::placeholder{
+  color: black;
+}
+
+.otp-button{ 
+  position: absolute;
+  top: 88px;
+  right: 23px;
+  text-decoration: none;
+  font-size: 13PX;
+  font-weight: 600;
+  color: blue ;
+}
+
+.otp-submit-button{
+  position: absolute;
+  right: 50px;
+  border: 2px solid gold;
+  padding: 2px;
+  color: gold;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.otp-submit-button:hover{
+  background-color: gold;
+  color: black;
+  border: 2px solid black;
+  font-size: 13PX;
+  font-weight: 600;
+  cursor: pointer;
 }
