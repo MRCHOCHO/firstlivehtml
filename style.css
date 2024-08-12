@@ -9,6 +9,7 @@
   color: black;
 }
 
+
 @font-face {
   font-family: cursived;
   src: url(font/CedarvilleCursive-Regular.ttf);
@@ -27,7 +28,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  /* background-color: #333; */
   color: whitesmoke;
 }
 
@@ -114,36 +114,36 @@ html {
   color: #ff9800;
 }
 
-/* HEADER FACE /////// */
+/* HEADER PHASE /////// */
 
 .fsection {
   position: absolute;
-  /* height: 100vh; */
   height: auto;
   width: 100%;
   inset: 0;
-  background-image: url("./IMG/160726150143-us-beautiful-hotels-17-bellagio-2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   border-bottom: 30px solid goldenrod;
-  /* margin-bottom: 30px ; */
-  /* background-color: goldenrod; */
 }
 
-/* casorell styling  SECTION*/
-/* 
-.scrolling-section {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  overflow: hidden;
-  position: relative;
-  white-space: nowrap;
-  border-bottom: solid 30px goldenrod;
-} */
+.fely{
+  position: absolute;
+  top: 277px;
+  right: 2px;
+}
+
+.contact-us-image{
+  width: 200px;
+}
+
+.whatsapp-link{
+  position: fixed;
+  width: 50px;
+  right: 3px;
+  top: 260px;
+}
 
 .scrolling-images {
   display: flex;
@@ -182,7 +182,7 @@ html {
   font-size: 50px;
   text-align: center;
   color: #ff9800;
-  background-color: #333;
+  background-color: #102C57;
 }
 
 .welcomemessage span {
@@ -193,7 +193,6 @@ html {
   width: 20%;
   max-width: 150px;
   min-width: 500px;
-  /* background-color: #333; */
   float: right;
   padding: 10px;
   margin-left: 10px;
@@ -204,12 +203,12 @@ html {
 }
 
 .welcomemessage {
-  background: #333;
+  background: #102C57;
 }
 
 #abtus{
   padding-bottom: 30px;
-  background: #333;
+  background:#102C57;
 }
 
 .ourservivebutton1 {
@@ -217,7 +216,7 @@ html {
   margin-top: 10px;
   width: 130px;
   background: gold;
-  color: #333;
+  color: #102C57;
   padding: 5px;
   border-radius: 5px;
   font-weight: bolder;
@@ -239,7 +238,7 @@ footer {
 
 .ourservice {
   z-index: 1;
-  background-image: url(./IMG/160726150143-us-beautiful-hotels-17-bellagio-2.jpg );
+  background-image: url(https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -248,6 +247,17 @@ footer {
   border-bottom: 10px solid goldenrod;
   width: 100%;
   inset: 0;
+}
+
+.rems{
+  position: relative;
+}
+
+.rems img{
+  position: absolute;
+  top: 130px;
+  right: 0px;
+  width: 110px;
 }
 
 .rems h1 {
@@ -268,7 +278,7 @@ footer {
   grid-template-columns: repeat(5, 2fr);
   /* grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr; */
   /* gap: 5px; */
-  background-color: #333;
+  background-color: #102C57;
 }
 
 .osic {
@@ -291,7 +301,7 @@ footer {
   width: 70px;
   height: 70px;
   background-color: red;
-  box-shadow: #333;
+  box-shadow: #102C57;
   padding: 50px;
   margin: 50px;
 }
@@ -307,7 +317,7 @@ footer {
 .aboutus-contentcontainerf{
   display: flex;
   justify-content: space-around;
-  background-color: #333;
+  background-color: #102C57;
   padding-bottom: 40px;
 }
 
@@ -322,7 +332,7 @@ footer {
 .aboutus-contentcontainerb{
   display: flex;
   justify-content: space-around;
-  background-color: #333;
+  background-color: #102C57;
   padding-bottom: 40px;
   border-bottom: 5PX SOLID goldenrod;
 }
@@ -330,7 +340,7 @@ footer {
 /* ///////////OUUR MENU SECTION  */
 
 #ourmenu {
-  background-color: #333;
+  background-color: #102C57;
 }
 
 .dropdown {
@@ -416,13 +426,19 @@ footer {
   height: 100dvh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(./IMG/160726150143-us-beautiful-hotels-17-bellagio-2.jpg );
+  background-image: url(https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D );
+}
+
+.signupman{
+  position: absolute;
+  top: 100px;
+  width: 260px;
 }
 
 .bookingformcontainer{
   border: 5px solid gold;
   max-width: 300px;
-  background-color: #333;
+  background-color: #102C57;
 
 }
 
